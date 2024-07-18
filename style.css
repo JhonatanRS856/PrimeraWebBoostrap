@@ -1,0 +1,115 @@
+body{
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+#menu a{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#menu button{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.carousel-inner{
+    max-height: 20rem;
+}
+
+
+.servicio-fila img{
+    object-fit: cover;
+}
+
+.mapa{
+    background-image: url('/imagenes/AnimeBG.jpg');
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+}
+
+#local{
+    background: #f3f3f3;
+    display: flex;
+    justify-content:center;
+}
+
+.wrapper{
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+#numeros-local div{
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+#numeros-local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child){
+    padding-left: 20px;
+}
+
+#numeros-local p{
+    margin: 0;
+}
+
+#contenedor-formulario{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+#seccion-contacto{
+    position: relative; 
+}
+
+#iconos i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: black;
+}
+
+@media (max-width:1200px){
+    #local{
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+
+@media (max-width:768px){
+    #intro,
+    #equipo {
+        width: 90% !important;
+    }
+
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media (max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    #local{
+        padding-bottom: 200px;
+    }
+}
